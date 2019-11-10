@@ -11,6 +11,7 @@ public class LaunchTraining {
     } else {
       System.out.println("We are in " + classRoom); 
     }
+	System.out.println("Well Done!"); 
   }
 
 }
