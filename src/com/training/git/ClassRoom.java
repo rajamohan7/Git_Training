@@ -11,11 +11,20 @@ public class ClassRoom {
   public ClassRoom() {
   }
 
-  public ClassRoom(String meetingRoomName, String meetingRoomSeq, int floorNo) {
+  public ClassRoom(String meetingRoomName, String meetingRoomSeq, int floorNo, String sessionName) {
     super();
     this.meetingRoomName = meetingRoomName;
     this.meetingRoomSeq = meetingRoomSeq;
     this.floorNo = floorNo;
+    this.sessionName = sessionName;
+  }
+
+  public String getSessionName() {
+    return sessionName;
+  }
+
+  public void setSessionName(String sessionName) {
+    this.sessionName = sessionName;
   }
 
   public String getMeetingRoomName() {
@@ -45,7 +54,7 @@ public class ClassRoom {
   @Override
   public String toString() {
     return "ClassRoom [meetingRoomName=" + meetingRoomName + ", meetingRoomSeq=" + meetingRoomSeq + ", floorNo="
-        + floorNo + "]";
+        + floorNo + ", session Name = "+ sessionName +"]";
   }
 
 }
